@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="sttyle.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">DEV.</h2>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="neon">Gowtham A</span></h1>
+    <h2><span id="typing"></span></h2>
+    <p>Design - Develope -   Deploy.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn neon-btn">View Projects</a>
+      <a href="#contact" class="btn outline-btn">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section glass">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    Frontend Developer with hands-on internship in React.js, dedicated to UI design, 
+    and product testing at TICK my BUS. Proven in delivering innovative web solutions 
+    that enhance user engagement and meet client objectives. Strong project management 
+    skills ensure timely delivery and client satisfaction. Specialized in frontend 
+    technologies, such as React.js and Node.js, employing SQL databases and MongoDB 
+    to evaluate client requirements and elevate design usability
+  </p>
+
+  <div class="tech-stack">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <i class="fab fa-react"></i>
+    <i class="fab fa-node"></i>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills">
+    <div class="skill">
+      <span>HTML</span>
+      <div class="bar"><div data-skill="90"></div></div>
+    </div>
+    <div class="skill">
+      <span>CSS</span>
+      <div class="bar"><div data-skill="85"></div></div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="bar"><div data-skill="80"></div></div>
+    </div>
+    <div class="skill">
+      <span>React</span>
+      <div class="bar"><div data-skill="75"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section glass">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-showcase">
+
+    <!-- Project 1 -->
+    <div class="project-showcase-card">
+      <div class="project-image">
+        <img src="img/image2.png" alt="Tick My Bus Project">
+      </div>
+
+      <div class="project-content">
+        <h3>Frontend Developer – Tick My Bus</h3>
+        <span class="project-duration">Feb 2025 – June 2025</span>
+
+        <p>
+          Worked as a Team Lead Frontend Developer Intern and Product Testing Intern at Aim Universe,
+          contributing to the Tick My Bus platform. Built and improved core UI screens,
+          optimized user flows, ensured accessibility, and participated in end-to-end testing
+          for performance and usability.
+        </p>
+
+        <div class="project-links">
+          <!-- <a href="#" class="btn outline-btn">GitHub</a> -->
+          <a href="https://server.tickmybus.com/" class="btn neon-btn">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-showcase-card reverse">
+      <div class="project-image">
+        <img src="img/image.png" alt="HighRiz Website">
+      </div>
+
+      <div class="project-content">
+        <h3>HighRiz Website – Freelance</h3>
+        <span class="project-duration">Official Company Website</span>
+
+        <p>
+          Developed the official website <strong>highriz.in</strong> as a freelance web developer.
+          Handled UI/UX design, development, deployment, hosting, and SEO optimization.
+          Delivered a responsive, high-performance website aligned with client expectations.
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/gowthamkce" class="btn outline-btn">GitHub</a>
+          <a href="https://highriz.in/" class="btn neon-btn">Live Site</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>FEB-2025 - JUN-2023</span>
+      <h3>Frontend Developer</h3>
+      <p>Worked as a Team Lead Frontend Developer and Product Testing Intern at Aim Universe on the 
+        Tick My Bus platform, building and optimizing core UI, improving accessibility, 
+        and supporting end-to-end testing for performance and usability.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section glass">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" />
+    <input type="email" id="email" placeholder="Your Email" />
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn neon-btn">Send Message</button>
+  </form>
+
+  <div class="socials">
+    <a href="https://github.com/gowthamkce"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/gowtham-a-6a3b95213/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/_gowtham_millar/"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 David • Built with HTML, CSS & JS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
